@@ -38,7 +38,7 @@ jobs:
         id: render-web-container
         uses: aws-actions/amazon-ecs-render-task-definition@v1
         with:
-          task-definition: task-definition.json
+          task-definition: task_definition.json
           container-name: web
           image: 685852568147.dkr.ecr.us-east-1.amazonaws.com/cicdpipegit:sample_docker_image
           environment-variables: "LOG_LEVEL=info"
